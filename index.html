@@ -1,0 +1,954 @@
+
+<!-- AULA 02 O QUE SÃO VARIÁVEIS E TIPOS DE DADOS
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+			var nome = prompt("Qual seu nome?");
+			alert("Bem-vindo, " + nome);
+
+			var endereco = 1.2; //numero decimal / numero real
+			var estaGravido = false; /*boolean*/
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 03 CONVERSÃO ENTRE TIPOS
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			//pedir para o usuario digitar um numero
+			var n1 = prompt("digite um número:");
+			n1 = parseFloat(n1);
+
+			//pedir para o usuario digitar outro numero
+			var n2 = prompt("digite mais um número:");
+			n2 = parseFloat(n2);
+
+			//mostrar a soma
+			alert( n1 + n2 );
+			
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 04 RESOLUÇÃO DO DESAFIO PROPOSTO
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			//pedir para o usuario digitar um numero
+			var n1 = prompt("digite um número:");
+
+			//converter em numero inteiro
+
+			n1 = parseInt(n1);
+
+			//pedir para o usuario digitar outro numero
+
+			var n2 = prompt("digite mais um número:");
+
+			//converter em numero inteiro
+
+			n2 = parseInt(n2);
+
+			//mostrar a subtracao concatenando com o texto "a subtracao é: ..."
+
+			alert("A subtração é: " + (n1 - n2) );
+
+
+			//mostrar a multiplicacao concatenando com o texto "a multiplicacao é: ..."
+
+			alert("A multiplicação é: " + (n1 * n2) );
+
+			//mostrar a divisão concatenando com o texto "a divisao é: ..."
+
+			alert("A divisão é: " + (n1 / n2)
+				);
+
+			//mostrar a soma concatenando com o texto "a soma é: ..."
+
+			alert("A soma é: " + (n1 + n2) );
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!--AULA 05 OPERADORES ARITMÉTICOS
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			//pedir para o usuario digitar dois numeros
+
+			var n1 = prompt('digite um número:');
+			n1 = parseFloat(n1);
+
+			var n2 = prompt('digite outro número:');
+			n2 = parseFloat(n2);
+
+			var media = (n1 + n2) / 2;
+
+			alert("A média é: " + media);
+			
+		</script>
+	</body>
+</html>
+-->
+
+
+<!--AULA 06 MAIS OPERADORES ARITMÉTICOS
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			//MÓDULO % É O RESTO DA DIVISÃO EXEMPLO: 10 % 9 = 1 SE O RESULTADO TERMINA COM 1 É ÍMPAR OU 6 % 2 = 0 SE O RESULTADO TERMINA COM 0 É PAR.
+
+			//POTENCIAÇÃO/EXPONENCIAÇÃO ** é quando um número é multiplicado por ele mesmo várias vezes. EXEMPLO: 
+			/* a: Base (número que está sendo multiplicado por ele mesmo) 
+			n: Expoente (número de vezes que o número é multiplicado)
+			Para melhor entender a potenciação, no caso do número 23 (dois elevado a terceira potência ou dois elevado ao cubo), tem-se:
+			23 = 2 x 2 x 2 = 4 x 2 = 8
+			Sendo,
+			2: Base
+			3: Expoente
+			8: Potência (resultado do produto) */
+
+			/* Incremento (++) Operador unário. Adiciona um ao seu operando. Se usado como operador prefixado (++x), retorna o valor de seu operando após a adição. Se usado como operador pósfixado (x++), retorna o valor de seu operando antes da adição.
+			Se x é 3, então ++x define x como 4 e retorna 4, enquanto x++ retorna 3 e, somente então, define x como 4. */
+
+			/* Decremento (--) Operador unário. Subtrai um de seu operando. O valor de retorno é análogo àquele do operador de incremento.
+			Se x é 3, então --x define x como 2 e retorna 2, enquanto x-- retorna 3 e, somente então, define x como 2. */
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 07/08 RESOLUÇÃO DESAFIO PROPOSTO
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			//pedir para o usuario digitar um numero
+
+			var n1 = prompt('digite um número:');
+
+			//converter em numero inteiro
+
+			n1 = parseInt(n1);
+
+			//pedir para o usuario digitar outro numero
+
+			var n2 = prompt('digite outro número:');
+
+			//converter em numero inteiro
+
+			n2 = parseInt(n2);
+
+			/*
+			mostrar num alert o seguinte texto o resto da divisão de (n1) por (n2) é: (resultado);
+			*/
+			alert("o resto da divisão de " + n1 + " por "+ n2 +" é: " + (n1 % n2) );
+			/*
+			mostrar num alert o seguinte texto o numero (n1) elevado a (n2) é: (resultado);*/
+
+			alert("o numero "+ n1 +" elevado a "+ n2 +" é: " + n1 ** n2);
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 09/10 OPERADORES DE COMPARAÇÃO/OPERADORES DE COMPARAÇÃO PART2
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			var n1 = prompt('digite um número');
+			n1 = parseFloat(n1);
+
+			var n2 = parseFloat(prompt('digite outro número'));
+
+			var media = (n1 + n2) / 2;
+
+			alert(media > 5);
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 11 CONTROLE DE DECISÕES
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			var n1 = prompt("digite um número");
+			n1 = parseFloat(n1);
+
+			var n2 = prompt("digite outro número");
+			n2 = parseFloat(n2);
+
+			var media = (n1 + n2) / 2;
+
+			alert(media > 5);
+			
+			if(media > 5){
+				alert("Parabéns! Você foi aprovado");
+			} else {
+				alert("Desculpe, mas não foi dessa vez");
+			}
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 12/13 EXERCÍCIO PROPOSTO - 3/RESOLUÇÃO DO EXERCÍCIO PROPOSTO - 3 RESOLVIDO
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			var nJogador1 = prompt('número do jogador 1');
+			nJogador1 = parseInt(nJogador1);
+
+			var nJogador2 = prompt('número do jogador 2');
+			nJogador2 = parseInt(nJogador2);
+
+			if(nJogador1 === nJogador2){
+				alert('Vocês empataram!');
+			} else {
+				var nSorteado = parseInt(Math.random() * 2);
+			if(nSorteado === 0){
+
+				if(nJogador1 < nJogador2){
+					alert('Ganhou o Jogador 1');
+				} else {
+					alert('Ganhou o Jogador 2');
+				}
+
+			} else {
+				if(nJogador1 > nJogador2){
+					alert('Ganhou o Jogador 1')
+				} else {
+					alert('Ganhou o Jogador 2')
+				}
+			}
+
+		}
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 14 OPERADORES LÓGICOS
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			var n1 = prompt("digite um número");
+			n1 = parseFloat(n1);
+
+			var n2 = prompt("digite outro número");
+			n2 = parseFloat(n2);
+
+			var media = (n1 + n2) / 2;
+			
+			if(media > 5 && n1 > 0 && n2 > 0){
+				alert("Parabéns! Você foi aprovado");
+			} else {
+				alert("Desculpe, mas não foi dessa vez");
+			}
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 15 RESOLUÇÃO DO EXERCÍCIO PROPOSTO - 4
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+		var n1 = prompt("digite um número");
+			n1 = parseFloat(n1);
+
+			var n2 = prompt("digite outro número");
+			n2 = parseFloat(n2);
+
+			var media = (n1 + n2) / 2;
+			
+			/*if(media > 5 && n1 > 0 && n2 > 0){
+				alert("Parabéns! Você foi aprovado");
+			} else {
+				alert("Desculpe, mas não foi dessa vez");
+			}*/
+
+			// Duas maneiras de resolver esse mesmo exercício.
+
+			if(n1 === 0 || n2 === 0 || media <=5){
+				alert("Desculpe, mas não foi dessa vez");
+			} else {
+				alert("Parabéns! Você foi aprovado");
+			}
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 16 CONTROLE DE DECISÃO: SWITCH... CASE
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			var n = prompt('digite um número');
+			n = parseInt(n);
+
+			switch(n){
+				case 1:
+					alert('boa escolha');
+					break;
+				case 2:
+					alert('legal');
+					break;
+				case 3:
+					alert('caramba')
+					break;
+				default:
+					alert('escolha de 1 a 3');
+			}
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 17 RESOLUÇÃO DO EXERCÍCIO PROPOSTO - 5
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			var nJogador1 = prompt('número do jogador 1');
+			nJogador1 = parseInt(nJogador1);
+
+			var nJogador2 = prompt('número do jogador 2');
+			nJogador2 = parseInt(nJogador2);
+
+			if(nJogador1 === nJogador2){
+				alert('Vocês empataram!');
+			} else {
+				var nSorteado = parseInt(Math.random() * 2);
+				alert('nSorteado: ' + nSorteado);
+			
+			/*ISSO TUDO AQUI PODE SER SUBSTUÍDO PELO QUE LÁ EMBAIXO
+
+			if(nSorteado === 0){
+
+				if(nJogador1 < nJogador2){
+					alert('Ganhou o Jogador 1');
+				} else {
+					alert('Ganhou o Jogador 2');
+				}
+
+			} else {
+				if(nJogador1 > nJogador2){
+					alert('Ganhou o Jogador 1')
+				} else {
+					alert('Ganhou o Jogador 2')
+				}
+			}*/
+
+			if( (nSorteado === 0 && nJogador1 < nJogador2) || nSorteado === 1 && nJogador1 > nJogador2){
+			alert('Ganhou o Jogador 1');
+
+			} else {
+				alert('Ganhou o Jogador 2');
+			}
+		}
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 18 REPETINDO AÇÕES
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			var numero = prompt('digite um número:');
+			numero = parseFloat(numero);
+
+			var indice = 1;
+
+			//repita até que indice seja <= 1000
+
+			while(indice <= 1000){
+				document.write(numero + ' x '+ indice +' = '+ (numero * indice) +' <br>');
+
+				indice = indice + 1;
+			}
+			document.write('Saiu do loop');
+			
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 19 TIPOS DE LOOP
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			var numero = prompt('digite um número:');
+			numero = parseFloat(numero);
+
+			//var indice = 1001;
+
+			//repita até que indice seja <= 1000
+
+			/*//loop do while
+			do {
+				document.write(numero + ' x '+ indice +' = '+ (numero * indice) +' <br>');
+
+				indice = indice + 1;
+			} while(indice <= 1000);
+			document.write('Saiu do loop');*/
+
+			/*//loop for
+			while(indice <= 1000){
+				document.write(numero + ' x '+ indice +' = '+ (numero * indice) +' <br>');
+
+				indice = indice + 1;
+			}
+			document.write('Saiu do loop');*/
+
+			for(var i = 1; i <= 1000; i++){
+				document.write(numero + ' x '+ i +' = '+ (numero * i) +' <br>');
+			}
+
+			document.write('Saiu do loop');
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 20 EXERCÍCIO PROPOSTO - 6
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			var numero = prompt('digite um número:');
+			numero = parseFloat(numero);
+
+			var indice = 0;
+			//repita até que indice seja <= 1000
+
+			while(indice <= 1000){
+				document.write(numero + ' x '+ indice +' = '+ (numero * indice) +' <br>');
+
+				if(indice % 10 === 0 && indice > 0){
+					document.write('<hr>');
+				}
+
+				indice = indice + 1;
+
+			}
+
+			document.write('Saiu do loop');
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 21 EXERCÍCIO PROPOSTO - 7
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			var ano = 1004;
+
+			while(ano <= 2017){
+				document.write(ano + '<br>');
+				//ano = ano + 4; poder ser assim ou: o mesmo sentido
+				ano += 4;
+			}
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 22 EXERCÍCIO PROPOSTO - 8
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+		<script>
+
+			var ano = 1004;
+
+			while(ano <= 2017){
+
+				if( !(ano % 100 === 0) || (ano % 400 === 0)){
+					document.write(ano + '<br>');
+				} else {
+					document.write(ano + ' não é bissexto!<br>')
+				}
+				//ano = ano + 4; poder ser assim ou: o mesmo sentido
+				ano += 4;
+			}
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 23 BREVE INTRODUÇÃO À INSERÇÃO DE CONTEÚDO HTML
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+
+	<div id="output"></div>
+
+		<script>
+
+			var output = document.querySelector('#output');
+
+			var mensagem = '';
+			for(var i = 0; i<= 1001; i++){
+				mensagem += 'i: ' + i + '<br>';
+			}
+
+			output.innerHTML = mensagem;
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 24 ATRELANDO FUNÇÕES À EVENTOS DISPARADOS POR ELEMENTOS NO HTML
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+
+	<button onclick="mostrarTabuada()">Criar Tabuada</button>
+	<button onclick="limparTabuada()">Limpar Tabuada</button>
+
+	<div id="output"></div>
+
+		<script>
+
+			function mostrarTabuada(){
+				alert('mostrarTabuada chamada');
+			}
+
+			mostrarTabuada();
+
+			var output = document.querySelector('#output');
+
+			var mensagem = '';
+
+			output.innerHTML = mensagem;
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 25 FUNÇÕES VOID - REAPROVEITANDO CÓDIGOS
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+
+	<button onclick="mostrarTabuada()">Criar Tabuada</button>
+	<button onclick="limparTabuada()">Limpar Tabuada</button>
+
+	<div id="output"></div>
+
+		<script>
+
+			function mostrarTabuada(){
+				//PERGUNTA O NUMERO PARA O USUARIO
+
+				var n = prompt('digite um numero:');
+
+				limparTabuada();
+
+				//CONVERTER O NUMERO
+				n = parseFloat(n);
+
+				//CRIAR UMA VARIAVEL QUE SERVIRA D EINDICE
+				var i = 1;
+
+				//ENQUANTO INDICE <= 1000
+					//CONCATENA NA VARIAVEL MENSAGEM
+					while(i <= 1000){
+						mensagem += n + ' x '+ i +' = '+ (n*i) +' <br>';
+						i++;
+					}
+
+					output.innerHTML = mensagem;
+
+					//MOSTRA MENSAGEM NO OUTPUT
+			}
+
+			function limparTabuada(){
+				mensagem = '';
+				output.innerHTML = mensagem;
+			}
+
+			var output = document.querySelector('#output');
+
+			var mensagem = '';
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 26/27 RESOLUÇÃO DO EXERCÍCIO PROPOSTO - 9
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+
+	<button onclick="somar()">+</button>
+	<button onclick="subtrair()">-</button>
+	<button onclick="multiplicar()">*</button>
+	<button onclick="dividir()">/</button>
+
+	<div id="output"></div>
+
+		<script>
+
+			var n1 = prompt('digite um numero:');
+			n1 = parseFloat(n1);
+			
+			escreve();
+
+			function escreve(){
+				var output = document.querySelector('#output');
+				output.innerHTML = n1;
+			}
+
+			function somar(){
+				var n = prompt('digite outro numero:');
+				n = parseFloat(n);
+				//n1 = n1 + n; mesma coisa!
+				n1 += n;
+				escreve();
+
+			}
+
+			function subtrair(){
+				var n = prompt('digite outro numero:');
+				n = parseFloat(n);
+				//n1 = n1 - n;
+				n1 -= n;
+				escreve();
+				
+			}
+
+			function multiplicar(){
+				var n = prompt('digite outro numero:');
+				n = parseFloat(n);
+				//n1 = n1 * n;
+				n1 *= n;
+				escreve();
+				
+			}
+
+			function dividir(){
+				var n = prompt('digite outro numero:');
+				n = parseFloat(n);
+				//n1 = n1 / n;
+				n1 /= n;
+				escreve();
+
+			}
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 28 FUNÇÕES QUE RECEBEM PARÂMETROS
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+
+		<button onclick="mostrarArea(largura, altura)">mostrar área</button>
+
+		<script>
+
+			var largura = prompt('digite a largura:');
+			largura = parseFloat(largura);
+
+			var altura = prompt('digite a altura:');
+			altura = parseFloat(altura);
+
+			/*function mostrarArea(l, a){
+				alert('recebendo parametro l : ' + l);
+				alert('recebendo parametro a : ' + a);*/
+
+				function mostrarArea(l, a){
+				alert('área total: ' + ( l * a));
+			}
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 29/30 RESOLUÇÃO DO EXERCÍCIO PROPOSTO - 10
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+
+	<button onclick="calcular('+')">+</button>
+	<button onclick="calcular('-')">-</button>
+	<button onclick="calcular('*')">*</button>
+	<button onclick="calcular('/')">/</button>
+
+	<div id="output"></div>
+
+		<script>
+
+			var n1 = prompt('digite um numero:');
+			n1 = parseFloat(n1);
+			
+			escreve();
+
+			function escreve(){
+				var output = document.querySelector('#output');
+				output.innerHTML = n1;
+			}
+
+			function calcular(simbolo){
+				var n = prompt('digite outro numero:');
+				n = parseFloat(n);
+				//n1 = n1 + n; mesma coisa!
+				//n1 += n;
+
+				switch(simbolo){
+					case '+':
+						n1 += n;
+						break;
+					case '-':
+						n1 -= n;
+						break;
+					case '*':
+						n1 *= n;
+						break;
+					case '/':
+						n1 /= n;
+				}
+
+				escreve();
+
+			}
+
+		</script>
+	</body>
+</html>
+-->
+
+
+<!-- AULA 31 FUNÇÕES QUE RETORNAM VALORES-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lógica de Programação com JavaScript</title>
+</head>
+<body>
+	<h1>Lógica de Programação com JavaScript</h1>
+
+		<button onclick="mostrarArea(largura, altura)">mostrar área</button>
+
+		<script>
+
+			var largura = prompt('digite a largura:');
+			largura = parseFloat(largura);
+
+			var altura = prompt('digite a altura:');
+			altura = parseFloat(altura);
+
+			/*function mostrarArea(l, a){
+				alert('recebendo parametro l : ' + l);
+				alert('recebendo parametro a : ' + a);*/
+
+				function mostrarArea(l, a){
+				alert('área total: ' + ( l * a));
+			}
+
+		</script>
+	</body>
+</html>
